@@ -1,0 +1,26 @@
+> we can use the following code to generate own card decks
+    cardTypes = ['Diamond', 'Clover', 'Heart', 'Spades']
+    for i in cardTypes:
+        for j in range(2, 15):
+            if j == 11:
+                cards.append('Jack ' + i)
+            elif j == 12:
+                cards.append('Queen ' + i)
+            elif j == 13:
+                cards.append('King ' + i)
+            elif j == 14:
+                cards.append('Ace ' + i)
+            else:
+                cards.append(f"{j} {i}")
+
+> Individual cards are ranked, from highest to lowest: A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3 and 2
+> This program is for a 2 player card game
+> Rules:
+    1. Each player will get 26 cards for a 52 card deck.
+    2. Cards are assigned in a random manner.
+    3. With each round, players can play the cards in the same order they received it.
+    4. Each card is assigned a value
+    5. Individual cards are ranked, from highest to lowest: A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3 and 2
+    6. If one player's card is has a higher value then that player will be awarded as the winner for that round.
+    7. Winner gets the cards played during that hand.
+    8. If both players are having the same value of card, then the hand goes until we get a tiebreaker or one player runs out of cards to play.
